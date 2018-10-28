@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzTriage", "EzTriage\EzTria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzTriage.Tests", "EzTriage.Tests\EzTriage.Tests.csproj", "{A251E0B5-3DCD-4516-B156-343CBD2FEF9D}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EZTriageDB", "EZTriageDB\EZTriageDB.sqlproj", "{CB34C120-FB16-4AD2-9474-39A089B99F60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{A251E0B5-3DCD-4516-B156-343CBD2FEF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A251E0B5-3DCD-4516-B156-343CBD2FEF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A251E0B5-3DCD-4516-B156-343CBD2FEF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB34C120-FB16-4AD2-9474-39A089B99F60}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
