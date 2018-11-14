@@ -13,10 +13,10 @@ namespace EzTriage.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class EZTriageDBEntities1 : DbContext
+    public partial class EZTriageDBEntities : DbContext
     {
-        public EZTriageDBEntities1()
-            : base("name=EZTriageDBEntities1")
+        public EZTriageDBEntities()
+            : base("name=EZTriageDBEntities")
         {
         }
     

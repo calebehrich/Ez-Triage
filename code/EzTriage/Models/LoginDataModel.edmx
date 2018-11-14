@@ -29,7 +29,7 @@
           <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="EZTriageDBEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="EZTriageDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="UserValidations" EntityType="Self.UserValidation" />
         </EntityContainer>
       </Schema>
@@ -37,7 +37,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="EZTriageDBModelStoreContainer" CdmEntityContainer="EZTriageDBEntities1">
+        <EntityContainerMapping StorageEntityContainer="EZTriageDBModelStoreContainer" CdmEntityContainer="EZTriageDBEntities">
           <EntitySetMapping Name="UserValidations">
             <EntityTypeMapping TypeName="EZTriageDBModel.UserValidation">
               <MappingFragment StoreEntitySet="UserValidation">
