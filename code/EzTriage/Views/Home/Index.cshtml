@@ -18,8 +18,8 @@
     <div>
         <h1>Dashboard</h1>
         <h3>Username: @Session["userName"].ToString()</h3>
-        <a href="@Url.Action("NewEncounter", "Home")">New Patient Encounter</a>
-        <a href="@Url.Action("PatientLookUp", "")">Patient Look Up</a>
+        <p><a href="@Url.Action("NewEncounter", "Encounter")">New Patient Encounter</a></p>
+        <p><a href="@Url.Action("PatientLookUp", "")">Patient Look Up</a></p>
         <a href="@Url.Action("LogOut", "Login")">Log Out</a>
     </div>
 </body>

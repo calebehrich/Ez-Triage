@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "NewEncounter";
+}
+
+<h2>New Patient Encounter</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("First Name")<br />
+    @Html.TextBox("First Name")<br />
+
+    <button type="submit">Submit</button>
+}
