@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace EzTriage.Controllers
 {
-    public class DashBoardController : Controller
+    public class HomeController : Controller
     {
         public ActionResult Index()
         {
