@@ -11,7 +11,7 @@ namespace EzTriage.Controllers
         // GET: Encounter
         public ActionResult NewEncounter()
         {
-            return RedirectToAction("NewEncounter", "Encounter");
+            return View();
         }
     }
 }
