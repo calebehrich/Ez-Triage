@@ -13,5 +13,20 @@ namespace EzTriage
         {
 
         }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        public void Clear()
+        {
+            hfPatientID.Value = "";
+            txtFirstName.Text = txtLastName.Text = txtAddress.Text = "";
+            lblSuccessMessage.Text = lblErrorMessage.Text = "";
+            btnSave.Text = "Save";
+            
+
+        }
     }
 }

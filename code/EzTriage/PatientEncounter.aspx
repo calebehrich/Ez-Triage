@@ -41,7 +41,7 @@
                     </td>
                     <td colspan="2">
                         <asp:Button ID="btnSave" runat="server" Text="Save Patient" />
-                        <asp:Button ID="btnClear" runat="server" Text="Clear" />
+                        <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" />
                     </td>
                 </tr>
                 <tr>
