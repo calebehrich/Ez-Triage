@@ -179,6 +179,13 @@
     <Compile Include="Models\UserValidation.cs">
       <DependentUpon>LoginDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PatientEncounter.aspx.cs">
+      <DependentUpon>PatientEncounter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientEncounter.aspx.designer.cs">
+      <DependentUpon>PatientEncounter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +207,7 @@
       <DependentUpon>LoginDataModel.edmx</DependentUpon>
       <LastGenOutput>LoginDataModel.cs</LastGenOutput>
     </Content>
+    <Content Include="PatientEncounter.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
