@@ -9,9 +9,9 @@ namespace EzTriage.Controllers
     public class EncounterController : Controller
     {
         // GET: Encounter
-        public ActionResult NewEncounter()
+        public RedirectResult NewEncounter()
         {
-            return View();
+            return Redirect("~/PatientEncounter.aspx");
         }
     }
 }
