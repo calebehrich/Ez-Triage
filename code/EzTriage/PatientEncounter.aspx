@@ -35,12 +35,36 @@
                         <asp:TextBox ID="txtAddress" runat="server" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 </tr>
+                   <tr>
+                    <td>
+                        <asp:Label ID="Label4" runat="server" Text="City"></asp:Label>
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                   <tr>
+                    <td>
+                        <asp:Label ID="Label5" runat="server" Text="State"></asp:Label>
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="txtState" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                   <tr>
+                    <td>
+                        <asp:Label ID="Label6" runat="server" Text="Phone Number"></asp:Label>
+                    </td>
+                    <td colspan="2">
+                        <asp:TextBox ID="txtPhoneNumber" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         
                     </td>
                     <td colspan="2">
-                        <asp:Button ID="btnSave" runat="server" Text="Save Patient" />
+                        <asp:Button ID="btnSave" runat="server" Text="Save Patient" OnClick="btnSave_Click" />
                         <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" />
                     </td>
                 </tr>
@@ -64,9 +88,12 @@
             <br />
             <asp:GridView ID="Patient" runat="server" AutoGenerateColumns="false">
                   <Columns>
-                      <asp:BoundField DataField="First Name" HeaderText="First Name" />
-                      <asp:BoundField DataField="Last Name" HeaderText="Last Name" />
+                      <asp:BoundField DataField="FirstName" HeaderText="First Name" />
+                      <asp:BoundField DataField="LastName" HeaderText="Last Name" />
                       <asp:BoundField DataField="Address" HeaderText="Address" />
+                      <asp:BoundField DataField="City" HeaderText="City" />
+                      <asp:BoundField DataField="State" HeaderText="State" />
+                      <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" />
                       <asp:TemplateField>
                           <ItemTemplate>
                               <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>'>View</asp:LinkButton>
