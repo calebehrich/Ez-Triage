@@ -96,7 +96,7 @@
                       <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" />
                       <asp:TemplateField>
                           <ItemTemplate>
-                              <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>'>View</asp:LinkButton>
+                              <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>' OnClick="lnk_OnClick">View</asp:LinkButton>
                           </ItemTemplate>
                       </asp:TemplateField>
                   </Columns>
