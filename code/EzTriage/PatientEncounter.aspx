@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+             <asp:Button ID="Home" runat="server" Text="Home" OnClick="btnHome_OnClick" />
             <asp:HiddenField ID="hfPatientID" runat="server" />
             <table>
                 <tr>
@@ -96,7 +97,7 @@
                       <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" />
                       <asp:TemplateField>
                           <ItemTemplate>
-                              <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>' OnClick="lnk_OnClick">View</asp:LinkButton>
+                              <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>'>View</asp:LinkButton>
                           </ItemTemplate>
                       </asp:TemplateField>
                   </Columns>

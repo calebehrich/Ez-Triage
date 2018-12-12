@@ -68,6 +68,9 @@ namespace EzTriage
 
         }
 
-
+        protected void btnHome_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Home/Index");
+        }
     }
 }
