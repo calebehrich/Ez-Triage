@@ -87,21 +87,6 @@
                 </tr>
             </table>
             <br />
-            <asp:GridView ID="Patient" runat="server" AutoGenerateColumns="false">
-                  <Columns>
-                      <asp:BoundField DataField="FirstName" HeaderText="First Name" />
-                      <asp:BoundField DataField="LastName" HeaderText="Last Name" />
-                      <asp:BoundField DataField="Address" HeaderText="Address" />
-                      <asp:BoundField DataField="City" HeaderText="City" />
-                      <asp:BoundField DataField="State" HeaderText="State" />
-                      <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" />
-                      <asp:TemplateField>
-                          <ItemTemplate>
-                              <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("PatientID") %>'>View</asp:LinkButton>
-                          </ItemTemplate>
-                      </asp:TemplateField>
-                  </Columns>
-            </asp:GridView>
         </div>
     </form>
 </body>

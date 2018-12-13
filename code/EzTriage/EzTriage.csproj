@@ -158,6 +158,7 @@
     <Compile Include="Controllers\EncounterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PatientLookUpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,10 +187,18 @@
     <Compile Include="PatientEncounter.aspx.designer.cs">
       <DependentUpon>PatientEncounter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PatientLookUp.aspx.cs">
+      <DependentUpon>PatientLookUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientLookUp.aspx.designer.cs">
+      <DependentUpon>PatientLookUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\backgroundImage.jpg" />
+    <Content Include="Content\backgroundpic.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -210,6 +219,7 @@
       <LastGenOutput>LoginDataModel.cs</LastGenOutput>
     </Content>
     <Content Include="PatientEncounter.aspx" />
+    <Content Include="PatientLookUp.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -252,6 +262,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\PatientLookUp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
