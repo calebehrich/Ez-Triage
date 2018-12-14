@@ -9,16 +9,38 @@
 
 <!DOCTYPE html>
 
+
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <style>
+        .button {
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            line-height: 19px;
+            padding: 9px;
+            border-radius: 17px;
+            font-family: Georgia, serif;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+            box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+            border: 2px solid rgb(28, 110, 164);
+            display: inline-block;
+
+    </style>
+
 </head>
 <body>
     <div>
         <h3>Welcome, @Session["userName"].ToString()</h3>
-        <p><a href="@Url.Action("NewEncounter", "Encounter")">New Patient Encounter</a></p>
-        <p><a href="@Url.Action("PatientLookUp", "PatientLookUp")">Patient Look Up</a></p>
+        <p><button><a href="@Url.Action("NewEncounter", "Encounter")">New Patient Encounter</a></button></p>
+        <p><button><a href="@Url.Action("PatientLookUp", "PatientLookUp")">Patient Look Up</a></button></p>
        
     </div>
 </body>

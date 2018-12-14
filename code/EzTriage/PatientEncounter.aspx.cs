@@ -16,7 +16,7 @@ namespace EzTriage
                              Integrated Security=true");
         protected void Page_Load(object sender, EventArgs e)
         {
-            FillGridView();
+           
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
@@ -52,21 +52,9 @@ namespace EzTriage
             Clear();
             if (hfPatientID.Value == "")
                 lblSuccessMessage.Text = "Saved Patient Successfully";
-            FillGridView();
         }
 
-        void FillGridView()
-        {
-            if (sqlCon.State == ConnectionState.Closed)
-                sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("PatientViewAll", sqlCon);
-            DataTable dataTbl = new DataTable();
-            sqlDa.Fill(dataTbl);
-            sqlCon.Close();
-            Patient.DataSource = dataTbl;
-            Patient.DataBind();
-
-        }
+        
 
         protected void btnHome_OnClick(object sender, EventArgs e)
         {
